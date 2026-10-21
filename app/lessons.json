@@ -1,0 +1,638 @@
+{
+  "vision": [
+    {
+      "title": {
+        "en": "Everyday work is training data",
+        "vi": "Công việc hằng ngày là nguồn dữ liệu"
+      },
+      "body": {
+        "en": [
+          "4D Labs proposes turning ordinary human actions into structured demonstrations for robots. A person does not just move an object: they observe it, choose a grip, apply force, and check whether the task worked.",
+          "A useful demonstration records these signals together, rather than storing a video without context. This is the whitepaper’s vision and should not be confused with a claim that every collection product is already available."
+        ],
+        "vi": [
+          "4D Labs đề xuất biến các thao tác thường ngày của con người thành dữ liệu hướng dẫn có cấu trúc cho robot. Khi cầm một vật, con người không chỉ di chuyển mà còn quan sát, chọn cách nắm, điều chỉnh lực và kiểm tra kết quả.",
+          "Một bản ghi có ích cần kết hợp các tín hiệu đó, thay vì chỉ lưu video thiếu ngữ cảnh. Đây là tầm nhìn trong whitepaper, không có nghĩa mọi sản phẩm thu thập đã hoạt động."
+        ]
+      },
+      "example": {
+        "en": "A technician opens a cabinet, finds the right valve and turns it carefully. A robot would need both the movement and the reason for adjusting its grip.",
+        "vi": "Kỹ thuật viên mở tủ, tìm đúng van và xoay nhẹ. Robot cần học cả chuyển động lẫn lý do phải điều chỉnh lực nắm."
+      },
+      "takeaway": {
+        "en": "Collecting meaningful action data is the first step toward teaching robots.",
+        "vi": "Thu thập dữ liệu hành động có ý nghĩa là bước đầu để dạy robot."
+      },
+      "sourceSection": "1.2 Network Vision",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "From perception to action",
+        "vi": "Từ nhận thức đến hành động"
+      },
+      "body": {
+        "en": [
+          "Recognizing a cup in an image is different from lifting it safely. Physical AI must connect perception with decisions, motor control and feedback from the environment.",
+          "The whitepaper describes a progression from data to embodied intelligence and then toward broader intelligence. These are conceptual layers, not a promise that general-purpose robotics has already been solved."
+        ],
+        "vi": [
+          "Nhận ra một chiếc cốc trong ảnh khác với việc nâng cốc an toàn. Physical AI cần kết nối nhận thức với quyết định, điều khiển chuyển động và phản hồi từ môi trường.",
+          "Whitepaper mô tả tiến trình từ dữ liệu đến trí tuệ hiện thân, rồi hướng tới trí tuệ tổng quát hơn. Đây là các lớp khái niệm, không phải lời khẳng định robot đa năng đã được giải quyết."
+        ]
+      },
+      "example": {
+        "en": "A camera can locate a glass; a robot still needs to estimate how hard to grip it and whether it is slipping.",
+        "vi": "Camera xác định vị trí ly; robot vẫn phải tính lực kẹp và phát hiện ly có trượt hay không."
+      },
+      "takeaway": {
+        "en": "Seeing is only one part of doing.",
+        "vi": "Nhìn thấy mới chỉ là một phần của hành động."
+      },
+      "sourceSection": "1.1 The Awakening of Physical Intelligence",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "What a robot must sense",
+        "vi": "Robot cần cảm nhận những gì"
+      },
+      "body": {
+        "en": [
+          "The data discussed by 4D Labs spans images, motion, hand pose, touch, force and task outcomes. Each modality answers a different question about what happened during an action.",
+          "Synchronizing those streams matters. If a pressure spike is recorded after the corresponding video frame, a model may learn the wrong relationship between contact and movement."
+        ],
+        "vi": [
+          "Dữ liệu 4D Labs đề cập gồm hình ảnh, chuyển động, tư thế tay, xúc giác, lực và kết quả nhiệm vụ. Mỗi loại tín hiệu trả lời một câu hỏi khác nhau về hành động.",
+          "Đồng bộ các luồng dữ liệu rất quan trọng. Nếu tín hiệu áp lực lệch thời điểm so với khung hình, mô hình có thể học sai mối liên hệ giữa tiếp xúc và chuyển động."
+        ]
+      },
+      "example": {
+        "en": "When handling a soft sponge, the camera shows deformation while tactile sensors indicate where and how firmly the hand presses.",
+        "vi": "Khi bóp miếng bọt biển, camera ghi hình biến dạng còn cảm biến xúc giác cho biết vị trí và lực ép."
+      },
+      "takeaway": {
+        "en": "Good physical data combines multiple synchronized signals.",
+        "vi": "Dữ liệu vật lý tốt kết hợp nhiều tín hiệu được đồng bộ."
+      },
+      "sourceSection": "3.2 / 4.1 Multimodal Data",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Collect, train, deploy",
+        "vi": "Thu thập, huấn luyện, triển khai"
+      },
+      "body": {
+        "en": [
+          "Collect → Train → Deploy summarizes the whitepaper’s proposed learning loop. Collect demonstrations, prepare and use them for model training, then evaluate behavior in real environments.",
+          "Deployment can generate new failure cases that inform later collection and training. A repeated loop is more useful than treating a model as finished after one training run."
+        ],
+        "vi": [
+          "Thu thập → Huấn luyện → Triển khai là vòng lặp được đề xuất trong whitepaper. Thu thập thao tác mẫu, chuẩn bị dữ liệu để huấn luyện, sau đó đánh giá hành vi trong môi trường thực.",
+          "Khi triển khai có thể xuất hiện tình huống lỗi mới, giúp cải thiện dữ liệu và lần huấn luyện tiếp theo. Vòng lặp liên tục có ích hơn việc xem mô hình đã hoàn tất sau một lần huấn luyện."
+        ]
+      },
+      "example": {
+        "en": "A robot succeeds on clean tables but fails on wet ones; the next data collection should include slippery surfaces.",
+        "vi": "Robot làm tốt trên bàn khô nhưng trượt trên bàn ướt; đợt thu thập tiếp theo cần thêm bề mặt trơn."
+      },
+      "takeaway": {
+        "en": "Real-world feedback improves the next training cycle.",
+        "vi": "Phản hồi thực tế giúp cải thiện chu kỳ huấn luyện tiếp theo."
+      },
+      "sourceSection": "Cover / 1.2 Network Vision",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ],
+  "gap": [
+    {
+      "title": {
+        "en": "Why simulation can fail",
+        "vi": "Vì sao mô phỏng có thể thất bại"
+      },
+      "body": {
+        "en": [
+          "A simulator simplifies the physical world. Friction, lighting, sensor noise and material deformation may differ from what a real robot encounters. This difference is commonly called the Sim-to-Real gap.",
+          "The whitepaper argues that realistic interaction data is necessary to narrow this gap. Simulation remains useful; the challenge is ensuring its assumptions match important real-world effects."
+        ],
+        "vi": [
+          "Môi trường mô phỏng thường đơn giản hóa thế giới vật lý. Ma sát, ánh sáng, nhiễu cảm biến và biến dạng vật liệu có thể khác với tình huống robot gặp thật. Sự khác biệt này được gọi là khoảng cách Sim-to-Real.",
+          "Whitepaper cho rằng cần dữ liệu tương tác thực tế để thu hẹp khoảng cách này. Mô phỏng vẫn hữu ích; vấn đề là các giả định phải đủ sát với những tác động quan trọng ngoài đời."
+        ]
+      },
+      "example": {
+        "en": "A simulated gripper lifts a smooth box, but the real box has a wet surface and slips.",
+        "vi": "Kẹp robot nâng hộp trơn trong mô phỏng, nhưng hộp thật bị ướt và trượt khỏi tay kẹp."
+      },
+      "takeaway": {
+        "en": "A successful simulation is not proof of real-world reliability.",
+        "vi": "Thành công trong mô phỏng chưa chứng minh độ tin cậy ngoài thực tế."
+      },
+      "sourceSection": "3.0 The Core Challenge",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Real, multimodal, scalable, diverse",
+        "vi": "Thực, đa phương thức, mở rộng, đa dạng"
+      },
+      "body": {
+        "en": [
+          "4D Labs highlights four desired qualities: real interactions, multiple sensor modalities, enough scale, and diversity of environments and users. These properties help data represent more than one narrow laboratory setting.",
+          "Quantity alone is insufficient. Thousands of near-identical samples can teach less about generalization than fewer demonstrations across different materials, layouts and task conditions."
+        ],
+        "vi": [
+          "4D Labs nhấn mạnh bốn đặc tính mong muốn: tương tác thật, nhiều loại cảm biến, quy mô đủ lớn và môi trường/người tham gia đa dạng. Nhờ đó dữ liệu không chỉ phản ánh một phòng thí nghiệm cố định.",
+          "Chỉ nhiều dữ liệu là chưa đủ. Hàng nghìn mẫu gần như giống nhau có thể kém hữu ích hơn dữ liệu từ nhiều vật liệu, cách bố trí và điều kiện nhiệm vụ khác nhau."
+        ]
+      },
+      "example": {
+        "en": "Opening the same drawer in ten different kitchens exposes more variation than repeating it ten times in one kitchen.",
+        "vi": "Mở ngăn kéo ở mười căn bếp khác nhau tạo ra biến thiên đa dạng hơn lặp lại mười lần trong cùng một bếp."
+      },
+      "takeaway": {
+        "en": "Diversity and quality matter alongside dataset size.",
+        "vi": "Độ đa dạng và chất lượng quan trọng không kém số lượng."
+      },
+      "sourceSection": "3.2 Four Data Properties",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Contact, friction and deformation",
+        "vi": "Tiếp xúc, ma sát và biến dạng"
+      },
+      "body": {
+        "en": [
+          "Manipulation involves forces that cameras cannot always observe. Friction changes whether an object slips; contact determines where force is applied; deformable objects change shape while being handled.",
+          "The whitepaper positions tactile capture and physics-aware processing as ways to represent these effects more faithfully. They complement visual observations rather than replace them."
+        ],
+        "vi": [
+          "Thao tác vật thể liên quan đến những lực mà camera không phải lúc nào cũng quan sát được. Ma sát quyết định vật có trượt không; tiếp xúc quyết định lực tác dụng ở đâu; vật mềm đổi hình dạng khi bị cầm nắm.",
+          "Whitepaper đề xuất thu thập xúc giác và xử lý có xét quy luật vật lý để biểu diễn các hiệu ứng này sát hơn. Chúng bổ trợ chứ không thay thế dữ liệu hình ảnh."
+        ]
+      },
+      "example": {
+        "en": "Gripping a ripe tomato requires different force from gripping a metal tool, even if both fit the same hand.",
+        "vi": "Nắm quả cà chua chín cần lực khác hẳn nắm dụng cụ kim loại dù kích thước tương đương."
+      },
+      "takeaway": {
+        "en": "A robot must learn how objects respond to touch.",
+        "vi": "Robot phải học vật thể phản ứng thế nào khi bị chạm."
+      },
+      "sourceSection": "3.0 / 4.5 Technical Modules",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Why validation matters",
+        "vi": "Vì sao phải kiểm chứng dữ liệu"
+      },
+      "body": {
+        "en": [
+          "Sensor streams may contain timing offsets, noise or impossible physical values. Before training, teams should inspect synchronization, signal integrity and whether actions match observed outcomes.",
+          "AXON’s proposed calibration module compares processed signals with original observations and uses discrepancies as feedback. This is described as an architecture in the whitepaper, not a verified public service."
+        ],
+        "vi": [
+          "Luồng cảm biến có thể lệch thời gian, nhiễu hoặc chứa giá trị phi thực tế. Trước khi huấn luyện cần kiểm tra đồng bộ, chất lượng tín hiệu và sự khớp giữa hành động với kết quả.",
+          "Mô-đun hiệu chỉnh AXON được mô tả là so sánh tín hiệu sau xử lý với quan sát gốc và dùng sai lệch để phản hồi. Đây là kiến trúc nêu trong whitepaper, chưa phải xác nhận có dịch vụ công khai."
+        ]
+      },
+      "example": {
+        "en": "If camera footage shows contact at 2.0 seconds but the force trace peaks at 2.4 seconds, the dataset needs alignment.",
+        "vi": "Nếu video ghi tiếp xúc ở giây 2,0 nhưng lực tăng ở giây 2,4 thì cần căn chỉnh thời gian."
+      },
+      "takeaway": {
+        "en": "Training-ready data must be checked, not merely collected.",
+        "vi": "Dữ liệu dùng để huấn luyện cần được kiểm tra, không chỉ thu thập."
+      },
+      "sourceSection": "4.5 AXON / Data Calibration",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ],
+  "capture": [
+    {
+      "title": {
+        "en": "Ego Suite: first-person sensing",
+        "vi": "Ego Suite: cảm biến góc nhìn thứ nhất"
+      },
+      "body": {
+        "en": [
+          "The whitepaper describes an Ego Suite with RGB cameras and IMU-equipped glasses, tactile gloves, tactile e-skin and an EMG wristband. Together these are intended to capture human actions from the performer’s perspective.",
+          "RGB supplies images, IMU captures movement, and tactile or EMG signals add information about contact and muscle activity. The product description is a proposal in the paper; availability requires separate verification."
+        ],
+        "vi": [
+          "Whitepaper mô tả Ego Suite gồm camera RGB, kính có IMU, găng tay xúc giác, da điện tử và vòng EMG. Các thiết bị này được định hướng ghi thao tác từ góc nhìn người thực hiện.",
+          "RGB cung cấp hình ảnh, IMU đo chuyển động, còn xúc giác/EMG bổ sung thông tin tiếp xúc và hoạt động cơ. Đây là mô tả sản phẩm trong tài liệu; cần kiểm tra riêng việc triển khai thực tế."
+        ]
+      },
+      "example": {
+        "en": "A cook wearing capture equipment demonstrates how to knead dough while the system records motion and contact.",
+        "vi": "Đầu bếp mang thiết bị thu thập để hướng dẫn nhào bột, đồng thời hệ thống ghi chuyển động và tiếp xúc."
+      },
+      "takeaway": {
+        "en": "First-person capture helps preserve the context of human demonstrations.",
+        "vi": "Thu thập góc nhìn thứ nhất giúp giữ ngữ cảnh của thao tác mẫu."
+      },
+      "sourceSection": "4.1 Ego Suite",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "UMI-style grippers and DexUMI",
+        "vi": "Gripper kiểu UMI và DexUMI"
+      },
+      "body": {
+        "en": [
+          "A UMI-style gripper uses a standardized end effector with cameras and force sensing to collect manipulation demonstrations. The whitepaper positions this as a lower-cost complementary collection route.",
+          "DexUMI appears in the product matrix as a way to establish a baseline for basic grasping data. It focuses on repeatable manipulation, while other collection paths cover richer human behavior."
+        ],
+        "vi": [
+          "Gripper kiểu UMI dùng đầu kẹp chuẩn hóa kết hợp camera và cảm biến lực để ghi thao tác. Whitepaper xem đây là phương án thu thập bổ trợ với chi phí thấp hơn.",
+          "DexUMI được giới thiệu trong nhóm sản phẩm nhằm tạo nền chất lượng cho dữ liệu gắp nắm cơ bản. Nó chú trọng thao tác lặp lại, trong khi các phương án khác thu thập hành vi phong phú hơn."
+        ]
+      },
+      "example": {
+        "en": "Demonstrate picking up small tools with a gripper and record both the camera view and gripping force.",
+        "vi": "Thị phạm gắp dụng cụ nhỏ bằng kẹp và ghi đồng thời hình ảnh cùng lực kẹp."
+      },
+      "takeaway": {
+        "en": "A standardized gripper makes grasping demonstrations easier to compare.",
+        "vi": "Kẹp chuẩn hóa giúp so sánh các mẫu gắp nắm dễ hơn."
+      },
+      "sourceSection": "4.1 UMI-style Gripper / 4.2 DexUMI",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Teleoperation as a learning source",
+        "vi": "Teleoperation là nguồn dữ liệu học"
+      },
+      "body": {
+        "en": [
+          "Teleoperation means a human controls a robot remotely, potentially using VR, an exoskeleton or force-feedback controls. The whitepaper presents it as a route for complex tasks and corrective demonstrations.",
+          "The robot’s own sensors record what happened during the guided task. These demonstrations can support later training, but safe deployment and human oversight remain essential."
+        ],
+        "vi": [
+          "Teleoperation là con người điều khiển robot từ xa, có thể dùng VR, bộ khung ngoài hoặc điều khiển phản hồi lực. Whitepaper đề xuất cách này cho nhiệm vụ phức tạp và các thao tác sửa lỗi.",
+          "Cảm biến của robot ghi lại những gì diễn ra trong lúc được điều khiển. Dữ liệu có thể hỗ trợ huấn luyện sau này, nhưng an toàn và giám sát của con người vẫn rất quan trọng."
+        ]
+      },
+      "example": {
+        "en": "An operator guides a robotic arm to align a delicate component and records the successful sequence.",
+        "vi": "Người vận hành hướng dẫn cánh tay robot căn chỉnh linh kiện dễ hỏng và lưu lại chuỗi thao tác thành công."
+      },
+      "takeaway": {
+        "en": "Human guidance can produce demonstrations for difficult robot tasks.",
+        "vi": "Điều khiển của con người có thể tạo dữ liệu mẫu cho nhiệm vụ khó."
+      },
+      "sourceSection": "4.1 Teleoperation",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "From raw streams to useful samples",
+        "vi": "Từ tín hiệu thô đến mẫu dữ liệu hữu ích"
+      },
+      "body": {
+        "en": [
+          "The three collection routes feed into a fusion platform described in the whitepaper. Raw streams need cleaning, temporal alignment, annotation and integration before they can become useful training examples.",
+          "Annotations should explain the task and outcome, while quality checks flag missing sensor readings or conflicting measurements. This processing is as important as capture hardware."
+        ],
+        "vi": [
+          "Ba phương thức thu thập được đưa về nền tảng hợp nhất dữ liệu theo whitepaper. Luồng dữ liệu thô cần làm sạch, đồng bộ thời gian, gán nhãn và tích hợp trước khi thành mẫu huấn luyện hữu ích.",
+          "Nhãn dữ liệu cần mô tả nhiệm vụ và kết quả; kiểm tra chất lượng phải phát hiện thiếu tín hiệu hoặc số đo mâu thuẫn. Khâu xử lý quan trọng không kém thiết bị thu thập."
+        ]
+      },
+      "example": {
+        "en": "A grasping recording is labeled with object type, contact moment, applied force and whether the object was lifted.",
+        "vi": "Bản ghi gắp vật được gắn nhãn loại vật, thời điểm tiếp xúc, lực tác dụng và kết quả nâng vật."
+      },
+      "takeaway": {
+        "en": "Clean, aligned and labeled signals are easier to learn from.",
+        "vi": "Tín hiệu sạch, đồng bộ và có nhãn giúp mô hình học tốt hơn."
+      },
+      "sourceSection": "4.1 Fusion Data Platform / 4.5 Calibration",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ],
+  "tech": [
+    {
+      "title": {
+        "en": "ViTam: vision meets touch",
+        "vi": "ViTam: kết hợp thị giác và xúc giác"
+      },
+      "body": {
+        "en": [
+          "ViTam is presented as a vision–tactile fusion framework. A camera shows visible deformation, while tactile signals help infer contact in places the camera cannot see.",
+          "The whitepaper reports a 36% Chamfer-distance improvement for sponge reconstruction against selected comparisons. Treat this as a reported experimental claim, not a universal performance guarantee."
+        ],
+        "vi": [
+          "ViTam được giới thiệu là khung kết hợp thị giác và xúc giác. Camera cho thấy biến dạng nhìn được, còn tín hiệu xúc giác giúp suy luận tiếp xúc ở vị trí bị che khuất.",
+          "Whitepaper báo cáo mức cải thiện 36% về Chamfer distance khi tái tạo bọt biển so với một số phương pháp đối chiếu. Đây là kết quả được tài liệu công bố, không phải bảo đảm hiệu năng cho mọi trường hợp."
+        ]
+      },
+      "example": {
+        "en": "When a hand squeezes a sponge, touch sensors reveal pressure on the hidden side while the camera captures visible shape changes.",
+        "vi": "Khi bóp miếng bọt biển, cảm biến chạm đo lực ở mặt khuất còn camera ghi hình dạng nhìn thấy."
+      },
+      "takeaway": {
+        "en": "Combining touch and vision can reveal interactions neither captures alone.",
+        "vi": "Kết hợp xúc giác và thị giác giúp hiểu tương tác mà từng nguồn riêng lẻ bỏ sót."
+      },
+      "sourceSection": "4.5 ViTam",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "AXON: a calibration and simulation loop",
+        "vi": "AXON: vòng lặp hiệu chỉnh và mô phỏng"
+      },
+      "body": {
+        "en": [
+          "AXON is described as a Neural-Physics Calibration Closed-Loop Engine with three modules: Data Calibration, Counterfactual Generation and Neural Simulation. Each module checks its outputs against physical constraints or observed data.",
+          "The whitepaper claims up to 10× data augmentation through this approach. This is a claim from the document, not an independently verified deployment metric."
+        ],
+        "vi": [
+          "AXON được mô tả là bộ máy hiệu chỉnh Neural-Physics vòng kín gồm ba mô-đun: Hiệu chỉnh dữ liệu, Tạo tình huống phản thực và Mô phỏng neural. Mỗi mô-đun kiểm tra kết quả dựa trên ràng buộc vật lý hoặc dữ liệu quan sát.",
+          "Whitepaper nêu khả năng mở rộng dữ liệu 10 lần bằng cách tiếp cận này. Đây là tuyên bố trong tài liệu, chưa phải chỉ số triển khai được kiểm chứng độc lập."
+        ]
+      },
+      "example": {
+        "en": "Starting with a real grasp, the system could generate plausible variations and reject scenarios that violate contact physics.",
+        "vi": "Từ một thao tác gắp thật, hệ thống có thể tạo biến thể hợp lý và loại bỏ tình huống vi phạm quy luật tiếp xúc."
+      },
+      "takeaway": {
+        "en": "The feedback loop is meant to keep generated data physically plausible.",
+        "vi": "Vòng phản hồi nhằm giữ dữ liệu sinh ra phù hợp quy luật vật lý."
+      },
+      "sourceSection": "4.5 AXON",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Cross-Embodiment Mapping",
+        "vi": "Chuyển đổi thao tác giữa các cơ thể"
+      },
+      "body": {
+        "en": [
+          "Human hands and robot grippers have different joints, ranges of motion and geometry. Cross-Embodiment Mapping aims to translate human movement into robot-compatible actions using nonlinear mappings.",
+          "The whitepaper emphasizes more than copying coordinates: task intent, self-collision, robot dynamics and joint limits must all be considered. This is described as a technical approach."
+        ],
+        "vi": [
+          "Bàn tay người và tay kẹp robot khác nhau về khớp, biên độ chuyển động và hình dạng. Cross-Embodiment Mapping nhằm chuyển động tác người thành hành động phù hợp robot bằng ánh xạ phi tuyến.",
+          "Whitepaper nhấn mạnh không chỉ sao chép tọa độ: cần xét mục tiêu nhiệm vụ, tự va chạm, động lực học và giới hạn khớp. Đây là hướng kỹ thuật được mô tả trong tài liệu."
+        ]
+      },
+      "example": {
+        "en": "A person twists a cap with five fingers; a two-finger robot must find a different feasible grip to achieve the same goal.",
+        "vi": "Người vặn nắp bằng năm ngón; robot hai ngón phải tìm cách kẹp khả thi khác để đạt cùng mục tiêu."
+      },
+      "takeaway": {
+        "en": "Transfer the intent of an action, not only its shape.",
+        "vi": "Chuyển mục đích hành động, không chỉ sao chép hình dáng chuyển động."
+      },
+      "sourceSection": "4.5 Cross-Embodiment Mapping",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Constraints make movement feasible",
+        "vi": "Ràng buộc giúp chuyển động khả thi"
+      },
+      "body": {
+        "en": [
+          "A predicted robot motion is not useful if it exceeds joint limits or collides with the robot itself. Motion adaptation must satisfy mechanical constraints while preserving task goals.",
+          "The whitepaper discusses multi-constraint optimization and skeletal semantic alignment as parts of its mapping approach. These ideas explain why direct human-to-robot coordinate copying is insufficient."
+        ],
+        "vi": [
+          "Chuyển động robot được dự đoán sẽ vô ích nếu vượt giới hạn khớp hoặc gây tự va chạm. Việc chuyển đổi thao tác phải thỏa điều kiện cơ khí và vẫn đạt mục tiêu nhiệm vụ.",
+          "Whitepaper mô tả tối ưu nhiều ràng buộc và căn chỉnh ngữ nghĩa bộ xương như một phần của ánh xạ. Điều này lý giải vì sao không thể chép trực tiếp tọa độ người sang robot."
+        ]
+      },
+      "example": {
+        "en": "A humanoid cannot bend its elbow through its torso just because the human demonstration appears shorter from the camera angle.",
+        "vi": "Robot hình người không thể cho khuỷu tay xuyên qua thân chỉ vì góc quay khiến thao tác người trông ngắn hơn."
+      },
+      "takeaway": {
+        "en": "Useful motion must be physically executable and task-consistent.",
+        "vi": "Chuyển động hữu ích phải thực hiện được về mặt vật lý và đúng mục tiêu."
+      },
+      "sourceSection": "4.5 Cross-Embodiment Mapping",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ],
+  "network": [
+    {
+      "title": {
+        "en": "The journey of a dataset",
+        "vi": "Hành trình của một bộ dữ liệu"
+      },
+      "body": {
+        "en": [
+          "The whitepaper outlines a path from real-world capture to governed, cleaned, annotated training data. The value of data grows when it is consistent and usable by downstream model developers.",
+          "A practical pipeline can be summarized as capture → clean → synchronize → annotate → validate. This sequence is a teaching simplification of the processing steps described in the document."
+        ],
+        "vi": [
+          "Whitepaper phác thảo đường đi từ thu thập thực tế đến dữ liệu được quản trị, làm sạch, gán nhãn và sẵn sàng huấn luyện. Giá trị dữ liệu tăng khi nhất quán và có thể dùng cho nhà phát triển mô hình.",
+          "Có thể tóm tắt pipeline thực hành thành thu thập → làm sạch → đồng bộ → gán nhãn → kiểm chứng. Đây là cách đơn giản hóa để học các bước xử lý được tài liệu mô tả."
+        ]
+      },
+      "example": {
+        "en": "A raw video becomes a labeled demonstration only after it is aligned with force readings and its task outcome is recorded.",
+        "vi": "Video thô chỉ trở thành mẫu thao tác có nhãn sau khi đồng bộ với dữ liệu lực và ghi nhận kết quả."
+      },
+      "takeaway": {
+        "en": "A training dataset is a processed product, not just a folder of recordings.",
+        "vi": "Bộ dữ liệu huấn luyện là sản phẩm đã xử lý, không chỉ là thư mục video."
+      },
+      "sourceSection": "1.2 / 4.1 Data Infrastructure",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Provenance and quality",
+        "vi": "Nguồn gốc và chất lượng dữ liệu"
+      },
+      "body": {
+        "en": [
+          "Provenance means knowing where data came from, how it was processed and whether it can be trusted. Quality checks help identify corrupted or misleading samples.",
+          "The whitepaper proposes contribution proofs and ownership mechanisms. These are architectural claims; they should not be presented as proof that a public on-chain marketplace is already operational."
+        ],
+        "vi": [
+          "Truy xuất nguồn gốc nghĩa là biết dữ liệu đến từ đâu, được xử lý ra sao và có đáng tin hay không. Kiểm tra chất lượng giúp phát hiện mẫu lỗi hoặc gây hiểu nhầm.",
+          "Whitepaper đề xuất bằng chứng đóng góp và cơ chế sở hữu dữ liệu. Đây là mô tả kiến trúc, không chứng minh marketplace on-chain công khai đã vận hành."
+        ]
+      },
+      "example": {
+        "en": "A dataset records device type, collection conditions, timestamps, processing version and reviewer notes.",
+        "vi": "Bộ dữ liệu lưu loại thiết bị, điều kiện thu thập, thời gian, phiên bản xử lý và ghi chú kiểm duyệt."
+      },
+      "takeaway": {
+        "en": "Traceability makes errors easier to investigate.",
+        "vi": "Khả năng truy xuất giúp điều tra lỗi dễ hơn."
+      },
+      "sourceSection": "1.3 Proof of Contribution / Data Governance",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Who participates in the network?",
+        "vi": "Ai tham gia mạng lưới dữ liệu?"
+      },
+      "body": {
+        "en": [
+          "The 4D Labs vision includes distributed human collectors, processing infrastructure and organizations that use training data or models. Different participants contribute different parts of the data lifecycle.",
+          "The whitepaper describes incentive mechanisms for useful contributions, but participation requirements, rewards and live product availability need verification from current official announcements."
+        ],
+        "vi": [
+          "Tầm nhìn 4D Labs gồm người thu thập dữ liệu phân tán, hạ tầng xử lý và tổ chức sử dụng dữ liệu hoặc mô hình. Mỗi nhóm đóng góp một khâu khác nhau trong vòng đời dữ liệu.",
+          "Whitepaper mô tả cơ chế khuyến khích đóng góp hữu ích, nhưng điều kiện tham gia, phần thưởng và tình trạng sản phẩm cần đối chiếu thông báo chính thức mới nhất."
+        ]
+      },
+      "example": {
+        "en": "A collector records a task, a reviewer checks the recording and a robotics team trains on approved samples.",
+        "vi": "Người đóng góp ghi thao tác, người kiểm duyệt kiểm tra bản ghi và nhóm robot huấn luyện bằng mẫu đạt chuẩn."
+      },
+      "takeaway": {
+        "en": "A data network depends on coordinated roles and quality control.",
+        "vi": "Mạng dữ liệu cần vai trò phối hợp và kiểm soát chất lượng."
+      },
+      "sourceSection": "1.2 / 1.3 Network Vision",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Marketplace and model distribution",
+        "vi": "Marketplace và phân phối mô hình"
+      },
+      "body": {
+        "en": [
+          "The whitepaper discusses a future data marketplace, smartphone 3D scanning contributions, and a Model Store for reusable robotics capabilities. These are proposed business and technical directions.",
+          "Do not assume that uploading a scan currently earns tokens or that model APIs are publicly available. Verify each live feature against official product documentation before asking users to participate."
+        ],
+        "vi": [
+          "Whitepaper đề cập marketplace dữ liệu, đóng góp quét 3D bằng điện thoại và Model Store phân phối năng lực robot tái sử dụng. Đây là các định hướng kinh doanh và kỹ thuật được đề xuất.",
+          "Không nên mặc định tải bản quét lên hiện được nhận token hay API mô hình đã mở công khai. Cần kiểm tra từng tính năng thực tế qua tài liệu sản phẩm chính thức trước khi tham gia."
+        ]
+      },
+      "example": {
+        "en": "A factory scan could one day support robotics simulation, but a whitepaper example is not an active marketplace listing.",
+        "vi": "Bản quét 3D nhà máy có thể phục vụ mô phỏng robot trong tương lai, nhưng ví dụ trong whitepaper không phải tin đăng marketplace đang hoạt động."
+      },
+      "takeaway": {
+        "en": "Separate product vision from currently available features.",
+        "vi": "Phân biệt tầm nhìn sản phẩm với tính năng đã triển khai."
+      },
+      "sourceSection": "1.2 Phase Two / 4.3 / 4.4",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ],
+  "community": [
+    {
+      "title": {
+        "en": "Read primary sources critically",
+        "vi": "Đọc tài liệu gốc có chọn lọc"
+      },
+      "body": {
+        "en": [
+          "The whitepaper explains 4D Labs’ intended architecture, products and research directions. It is a primary source for the project’s claims, but does not independently validate all performance figures or launch dates.",
+          "When sharing a claim, identify whether it is a proposal, reported experiment or deployed feature. Cite the relevant section and check for newer official updates."
+        ],
+        "vi": [
+          "Whitepaper giải thích kiến trúc, sản phẩm và hướng nghiên cứu 4D Labs dự kiến. Đây là nguồn gốc cho các tuyên bố của dự án, nhưng không tự kiểm chứng mọi chỉ số hiệu năng hay thời điểm ra mắt.",
+          "Khi chia sẻ thông tin, hãy phân loại đó là đề xuất, kết quả thí nghiệm được báo cáo hay tính năng đã triển khai. Trích dẫn mục liên quan và kiểm tra cập nhật chính thức."
+        ]
+      },
+      "example": {
+        "en": "Write “the whitepaper reports 10× augmentation” rather than “the live product always creates 10× more data.”",
+        "vi": "Viết “whitepaper báo cáo mở rộng dữ liệu 10 lần” thay vì “sản phẩm hiện luôn tạo gấp 10 lần dữ liệu”."
+      },
+      "takeaway": {
+        "en": "Accurate wording builds trust.",
+        "vi": "Diễn đạt chính xác giúp xây dựng niềm tin."
+      },
+      "sourceSection": "1.0 / 4.0 Whitepaper",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Feedback that engineers can use",
+        "vi": "Feedback hữu ích cho kỹ sư"
+      },
+      "body": {
+        "en": [
+          "A useful technical report separates observations from assumptions. It records the tested environment, exact steps, expected behavior, actual behavior and supporting evidence.",
+          "If an interface does not expose enough data to identify an action, explain what is missing and how it affects verification. Avoid claiming a protocol bug from a screenshot alone."
+        ],
+        "vi": [
+          "Báo cáo kỹ thuật hữu ích cần tách quan sát khỏi giả định. Hãy ghi môi trường thử nghiệm, các bước cụ thể, kết quả mong đợi, kết quả thực tế và bằng chứng.",
+          "Nếu giao diện thiếu dữ liệu để nhận diện hành động, hãy chỉ rõ thông tin thiếu và ảnh hưởng đến việc kiểm chứng. Tránh kết luận lỗi giao thức chỉ từ một ảnh chụp."
+        ]
+      },
+      "example": {
+        "en": "Report: “Transaction page shows a hash but no action label; I cannot distinguish swap from transfer.”",
+        "vi": "Báo cáo: “Trang giao dịch có hash nhưng không có nhãn hành động; tôi không phân biệt được swap và transfer.”"
+      },
+      "takeaway": {
+        "en": "Reproducible evidence makes feedback actionable.",
+        "vi": "Bằng chứng tái hiện được giúp feedback có thể xử lý."
+      },
+      "sourceSection": "1.3 / 4.5",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "What this certificate means",
+        "vi": "Chứng chỉ này có ý nghĩa gì"
+      },
+      "body": {
+        "en": [
+          "A community learning certificate records participation in an independent educational quiz. It is not an official 4D Labs credential, a guarantee of technical expertise, or evidence of an official partnership.",
+          "The score reflects answers to this site’s question bank, which is publicly visible in a client-side demo. It should not be used as a security-sensitive or official qualification."
+        ],
+        "vi": [
+          "Chứng chỉ học tập cộng đồng ghi nhận việc tham gia bài kiểm tra kiến thức độc lập. Nó không phải chứng nhận chính thức của 4D Labs, không bảo đảm chuyên môn hay thể hiện quan hệ đối tác chính thức.",
+          "Điểm số phản ánh đáp án trong ngân hàng câu hỏi của website demo phía trình duyệt. Không nên dùng nó làm chứng nhận chính thức hoặc điều kiện có tính bảo mật."
+        ]
+      },
+      "example": {
+        "en": "Share the certificate as a learning milestone and include a clear “community-built” description.",
+        "vi": "Chia sẻ chứng chỉ như cột mốc học tập và ghi rõ đây là dự án cộng đồng."
+      },
+      "takeaway": {
+        "en": "Learning progress matters more than the badge.",
+        "vi": "Tiến bộ kiến thức quan trọng hơn huy hiệu."
+      },
+      "sourceSection": "Independent Community Education",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    },
+    {
+      "title": {
+        "en": "Protect personal data and wallets",
+        "vi": "Bảo vệ dữ liệu cá nhân và ví"
+      },
+      "body": {
+        "en": [
+          "Real-world capture may include people, homes or sensitive workplaces. Ethical collection requires consent, appropriate permissions and safeguards for identifying information.",
+          "The whitepaper proposes privacy-preserving mechanisms, but users should not assume every proposed safeguard is deployed. An educational site should never request a seed phrase or private key."
+        ],
+        "vi": [
+          "Thu thập dữ liệu thực tế có thể ghi hình người, nhà riêng hoặc nơi làm việc nhạy cảm. Thu thập có trách nhiệm cần sự đồng ý, quyền truy cập phù hợp và biện pháp bảo vệ thông tin định danh.",
+          "Whitepaper đề xuất các cơ chế bảo vệ riêng tư, nhưng không nên mặc định mọi biện pháp đã triển khai. Website học tập không bao giờ được yêu cầu seed phrase hoặc private key."
+        ]
+      },
+      "example": {
+        "en": "Before recording inside a workplace, check company policy and remove personal information from any sample shared publicly.",
+        "vi": "Trước khi ghi hình nơi làm việc, kiểm tra quy định công ty và xóa thông tin cá nhân khỏi mẫu chia sẻ công khai."
+      },
+      "takeaway": {
+        "en": "Consent and privacy are essential parts of useful data collection.",
+        "vi": "Sự đồng ý và quyền riêng tư là phần thiết yếu của thu thập dữ liệu."
+      },
+      "sourceSection": "1.3 Privacy Protection (proposal)",
+      "sourceUrl": "https://docs.4dlabs.space/"
+    }
+  ]
+}

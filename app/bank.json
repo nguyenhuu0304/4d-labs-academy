@@ -1,0 +1,794 @@
+{
+  "vision": [
+    {
+      "q": "What is the mission stated by 4D Labs?",
+      "options": [
+        "Turn the real world into a training ground for robots",
+        "Replace all robots with chatbots",
+        "Build a gaming console",
+        "Operate a centralized exchange"
+      ],
+      "why": "4D Labs describes its mission as turning the real world into a training ground for robots.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-01",
+      "answer": 0
+    },
+    {
+      "q": "Which data modalities are emphasized?",
+      "options": [
+        "Vision, touch and force",
+        "Only stock prices",
+        "Only text prompts",
+        "Only audio transcripts"
+      ],
+      "why": "Embodied intelligence needs real-world interaction data, including vision, touch and force.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-02",
+      "answer": 0
+    },
+    {
+      "q": "Which conceptual layer brings intelligence into the physical world?",
+      "options": [
+        "Embodied",
+        "A spreadsheet",
+        "A browser cache",
+        "An exchange"
+      ],
+      "why": "The whitepaper presents Data, Embodied and AGI as three conceptual layers.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-03",
+      "answer": 0
+    },
+    {
+      "q": "What is the proposed data cycle?",
+      "options": [
+        "Collect, train and deploy",
+        "Buy, hold and sell",
+        "Mine, burn and swap",
+        "Post, like and repost"
+      ],
+      "why": "The project proposes a collect–train–deploy data flywheel.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-04",
+      "answer": 0
+    },
+    {
+      "q": "Does this community quiz guarantee Mapper status?",
+      "options": [
+        "No",
+        "Yes, automatically",
+        "Yes, after one question",
+        "Yes, after wallet connection"
+      ],
+      "why": "This community academy is independent and does not grant project roles or rewards.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-05",
+      "answer": 0
+    },
+    {
+      "q": "What does Physical AI aim to enable?",
+      "options": [
+        "AI systems interacting with the physical world",
+        "Only writing marketing posts",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "AI systems interacting with the physical world. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-06",
+      "answer": 0
+    },
+    {
+      "q": "Which kind of data helps robots learn contact-rich tasks?",
+      "options": [
+        "Real-world interaction data",
+        "Only financial charts",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Real-world interaction data. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-07",
+      "answer": 0
+    },
+    {
+      "q": "Why does a robot need more than object recognition?",
+      "options": [
+        "It must choose and execute physical actions",
+        "Recognition automatically guarantees safe manipulation",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "It must choose and execute physical actions. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-08",
+      "answer": 0
+    },
+    {
+      "q": "What is the purpose of the collect–train–deploy cycle?",
+      "options": [
+        "Improve models using collected real-world experiences",
+        "Replace data with social media metrics",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Improve models using collected real-world experiences. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-09",
+      "answer": 0
+    },
+    {
+      "q": "Which statement best describes this Academy?",
+      "options": [
+        "Independent community learning tool",
+        "Official 4D Labs credential issuer",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Independent community learning tool. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-VISION-10",
+      "answer": 0
+    }
+  ],
+  "gap": [
+    {
+      "q": "What gap is described as a core challenge?",
+      "options": [
+        "Sim-to-Real gap",
+        "Email-to-SMS gap",
+        "Fiat-to-card gap",
+        "CPU-to-screen gap"
+      ],
+      "why": "The whitepaper identifies the Sim-to-Real gap as a bottleneck for embodied intelligence.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-01",
+      "answer": 0
+    },
+    {
+      "q": "Which property means capturing several sensor types?",
+      "options": [
+        "Multimodal",
+        "Monochrome",
+        "Centralized",
+        "Static"
+      ],
+      "why": "It highlights differences between simulated data and real physical interaction.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-02",
+      "answer": 0
+    },
+    {
+      "q": "What is missing from vision-only data?",
+      "options": [
+        "Contact and force feedback",
+        "Image pixels",
+        "Camera frames",
+        "Scene lighting"
+      ],
+      "why": "Four target properties are real, multimodal, scalable and diverse.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-03",
+      "answer": 0
+    },
+    {
+      "q": "Which set lists the four target properties?",
+      "options": [
+        "Real, multimodal, scalable, diverse",
+        "Fast, cheap, secret, closed",
+        "Text, price, chart, token",
+        "Private, local, silent, fixed"
+      ],
+      "why": "Vision-only data lacks tactile and force feedback.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-04",
+      "answer": 0
+    },
+    {
+      "q": "What does scalable collection aim to increase?",
+      "options": [
+        "Coverage of real-world scenarios",
+        "Only screen brightness",
+        "Only transaction fees",
+        "Only image resolution"
+      ],
+      "why": "The proposed approach combines distributed real-world collection with processing and validation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-05",
+      "answer": 0
+    },
+    {
+      "q": "What does Sim-to-Real refer to?",
+      "options": [
+        "The gap between simulated and physical environments",
+        "A cryptocurrency bridge",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "The gap between simulated and physical environments. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-06",
+      "answer": 0
+    },
+    {
+      "q": "Why are diverse environments valuable?",
+      "options": [
+        "They expose models to different real-world conditions",
+        "They guarantee flawless generalization",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "They expose models to different real-world conditions. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-07",
+      "answer": 0
+    },
+    {
+      "q": "Why is tactile sensing relevant to manipulation?",
+      "options": [
+        "It provides information about contact",
+        "It replaces all need for vision",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "It provides information about contact. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-08",
+      "answer": 0
+    },
+    {
+      "q": "What does multimodal data combine?",
+      "options": [
+        "Different sensor and interaction modalities",
+        "Only duplicate copies of a video",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Different sensor and interaction modalities. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-09",
+      "answer": 0
+    },
+    {
+      "q": "Why is real-world validation important?",
+      "options": [
+        "Simulations may not capture every physical effect",
+        "Simulations always match reality perfectly",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Simulations may not capture every physical effect. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-GAP-10",
+      "answer": 0
+    }
+  ],
+  "capture": [
+    {
+      "q": "Which path captures first-person interaction data?",
+      "options": [
+        "Ego Suite",
+        "A stock ticker",
+        "A text-only chatbot",
+        "A payment terminal"
+      ],
+      "why": "The whitepaper describes Ego Suite as a first-person data collection path.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-01",
+      "answer": 0
+    },
+    {
+      "q": "What is the UMI-style gripper intended to capture?",
+      "options": [
+        "Grasping interactions",
+        "Exchange order books",
+        "Browser history",
+        "Only speech"
+      ],
+      "why": "UMI-style grippers are described as another collection path for grasping tasks.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-02",
+      "answer": 0
+    },
+    {
+      "q": "Which path can capture complex task demonstrations remotely?",
+      "options": [
+        "Teleoperation",
+        "Email forwarding",
+        "Token staking",
+        "Image cropping"
+      ],
+      "why": "Teleoperation is a path for collecting demonstrations of complex tasks.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-03",
+      "answer": 0
+    },
+    {
+      "q": "Which device is proposed for accessible 3D spatial scanning?",
+      "options": [
+        "Smartphone",
+        "Mining ASIC",
+        "Satellite dish",
+        "Cash register"
+      ],
+      "why": "Smartphone 3D scanning is proposed for capturing spaces such as homes, factories and storefronts.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-04",
+      "answer": 0
+    },
+    {
+      "q": "Does the whitepaper alone prove public 3D scanning payouts are live?",
+      "options": [
+        "No",
+        "Yes, for every user",
+        "Yes, with guaranteed $10",
+        "Yes, without uploading data"
+      ],
+      "why": "The whitepaper describes upload-and-earn as a proposed model; this academy does not claim public payouts are live.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-05",
+      "answer": 0
+    },
+    {
+      "q": "What is Ego Suite designed to collect?",
+      "options": [
+        "First-person multimodal interaction data",
+        "Only blockchain balances",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "First-person multimodal interaction data. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-06",
+      "answer": 0
+    },
+    {
+      "q": "What does IMU commonly capture?",
+      "options": [
+        "Motion and orientation-related signals",
+        "Token prices",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Motion and orientation-related signals. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-07",
+      "answer": 0
+    },
+    {
+      "q": "What is a UMI-style gripper useful for?",
+      "options": [
+        "Collecting standardized manipulation demonstrations",
+        "Writing smart contracts",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Collecting standardized manipulation demonstrations. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-08",
+      "answer": 0
+    },
+    {
+      "q": "What can teleoperation provide?",
+      "options": [
+        "Human-controlled robot demonstrations",
+        "A guarantee of autonomous success",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Human-controlled robot demonstrations. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-09",
+      "answer": 0
+    },
+    {
+      "q": "Why synchronize sensor streams?",
+      "options": [
+        "To align events across modalities",
+        "To delete all timestamps",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "To align events across modalities. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-CAPTURE-10",
+      "answer": 0
+    }
+  ],
+  "tech": [
+    {
+      "q": "What does ViTam combine?",
+      "options": [
+        "Vision and tactile information",
+        "Fiat and stocks",
+        "Email and SMS",
+        "Only language tokens"
+      ],
+      "why": "ViTam is presented as a vision–tactile fusion module.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-01",
+      "answer": 0
+    },
+    {
+      "q": "What is Cross-Embodiment Mapping intended to bridge?",
+      "options": [
+        "Human actions and different robot embodiments",
+        "Two bank accounts",
+        "Two social networks",
+        "Two browser tabs"
+      ],
+      "why": "Cross-Embodiment Mapping aims to translate human operation data to robot bodies.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-02",
+      "answer": 0
+    },
+    {
+      "q": "How is AXON described?",
+      "options": [
+        "A neural-physics calibration closed-loop engine",
+        "A mobile wallet",
+        "A crypto exchange",
+        "A Discord moderation bot"
+      ],
+      "why": "AXON is described as a neural-physics calibration closed-loop engine.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-03",
+      "answer": 0
+    },
+    {
+      "q": "Which module is listed under AXON?",
+      "options": [
+        "Data Calibration Module",
+        "Price Oracle Module",
+        "NFT Auction Module",
+        "Email Delivery Module"
+      ],
+      "why": "AXON includes data calibration, counterfactual generation and neural simulation modules.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-04",
+      "answer": 0
+    },
+    {
+      "q": "What kind of generation is described in AXON?",
+      "options": [
+        "Counterfactual generation",
+        "Token airdrop generation",
+        "Social-media generation",
+        "Banknote generation"
+      ],
+      "why": "These are technical descriptions and project claims, not independent performance verification.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-05",
+      "answer": 0
+    },
+    {
+      "q": "What does ViTam emphasize?",
+      "options": [
+        "Vision–tactile fusion",
+        "Only audio translation",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Vision–tactile fusion. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-06",
+      "answer": 0
+    },
+    {
+      "q": "What is a purpose of AXON?",
+      "options": [
+        "Neural-physics calibration and data generation",
+        "A centralized trading exchange",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Neural-physics calibration and data generation. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-07",
+      "answer": 0
+    },
+    {
+      "q": "What is cross-embodiment mapping?",
+      "options": [
+        "Translating motion across different body structures",
+        "Copying identical joint angles into every robot",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Translating motion across different body structures. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-08",
+      "answer": 0
+    },
+    {
+      "q": "What can constrain robot motion mapping?",
+      "options": [
+        "Joint limits and collisions",
+        "Only the color of the robot",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Joint limits and collisions. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-09",
+      "answer": 0
+    },
+    {
+      "q": "Why are contact and force important?",
+      "options": [
+        "They influence physical manipulation outcomes",
+        "They are unrelated to grasping",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "They influence physical manipulation outcomes. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-TECH-10",
+      "answer": 0
+    }
+  ],
+  "network": [
+    {
+      "q": "Who produces real-world data in the proposed network?",
+      "options": [
+        "Collectors",
+        "Only model buyers",
+        "Only auditors",
+        "Only exchange operators"
+      ],
+      "why": "The proposed node network has collectors, compute nodes and consumers.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-01",
+      "answer": 0
+    },
+    {
+      "q": "What do compute nodes do in the proposed design?",
+      "options": [
+        "Store, process and verify data",
+        "Only write blog posts",
+        "Only sell devices",
+        "Only issue passports"
+      ],
+      "why": "Collectors include consumer users, scenario partners and robot manufacturers.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-02",
+      "answer": 0
+    },
+    {
+      "q": "Which is a dataset family in the Data Asset Matrix?",
+      "options": [
+        "Tactile datasets",
+        "Weather derivatives",
+        "Bank deposits",
+        "Email addresses"
+      ],
+      "why": "Compute nodes are described as storing, processing and verifying data.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-03",
+      "answer": 0
+    },
+    {
+      "q": "Who can be a data consumer in the proposed network?",
+      "options": [
+        "Model companies",
+        "Only social media moderators",
+        "Only smartphone sellers",
+        "Only advertisers"
+      ],
+      "why": "The Data Asset Matrix includes action, tactile, task and scene datasets.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-04",
+      "answer": 0
+    },
+    {
+      "q": "What is the Model Store intended to distribute?",
+      "options": [
+        "Reusable model capabilities",
+        "Physical cash",
+        "Mobile SIM cards",
+        "Domain names"
+      ],
+      "why": "The Model Store is presented as a distribution channel for reusable model capabilities.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-05",
+      "answer": 0
+    },
+    {
+      "q": "What is a data marketplace intended to facilitate?",
+      "options": [
+        "Distribution and licensing of data assets",
+        "Only exchanging profile pictures",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Distribution and licensing of data assets. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-06",
+      "answer": 0
+    },
+    {
+      "q": "Why is provenance useful?",
+      "options": [
+        "It helps trace where a dataset came from",
+        "It makes quality checks unnecessary",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "It helps trace where a dataset came from. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-07",
+      "answer": 0
+    },
+    {
+      "q": "What is the purpose of processing collected data?",
+      "options": [
+        "Produce usable, consistent training data",
+        "Discard every sensor reading",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Produce usable, consistent training data. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-08",
+      "answer": 0
+    },
+    {
+      "q": "What is a proposed compute-node role?",
+      "options": [
+        "Support processing, storage or verification",
+        "Replace every robot with a website",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Support processing, storage or verification. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-09",
+      "answer": 0
+    },
+    {
+      "q": "Which description of proposed $4D incentives is safest?",
+      "options": [
+        "Whitepaper concepts do not guarantee live rewards",
+        "All quiz learners automatically receive tokens",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Whitepaper concepts do not guarantee live rewards. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-NETWORK-10",
+      "answer": 0
+    }
+  ],
+  "community": [
+    {
+      "q": "Which token is named in the proposed incentive model?",
+      "options": [
+        "$4D",
+        "$RTM",
+        "$BTC",
+        "$SOL"
+      ],
+      "why": "The whitepaper proposes $4D incentives linked to data contribution and quality.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-01",
+      "answer": 0
+    },
+    {
+      "q": "What does Discord say Mappers do?",
+      "options": [
+        "Participate in experiments and share feedback",
+        "Guarantee token listings",
+        "Operate every compute node",
+        "Issue official certificates"
+      ],
+      "why": "The whitepaper describes on-chain contribution records and a decentralized data network as design goals.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-02",
+      "answer": 0
+    },
+    {
+      "q": "Does this independent Academy assign Discord roles?",
+      "options": [
+        "No",
+        "Yes, instantly",
+        "Yes, after 4/5",
+        "Yes, after sharing on X"
+      ],
+      "why": "Discord describes Mappers as contributors who participate in experiments and share feedback.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-03",
+      "answer": 0
+    },
+    {
+      "q": "Which statement about rewards is supported by the whitepaper alone?",
+      "options": [
+        "A reward mechanism is proposed",
+        "Every user is already being paid",
+        "All rewards are guaranteed",
+        "Every scan is automatically approved"
+      ],
+      "why": "The Mapper role description does not say an independent quiz grants the role.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-04",
+      "answer": 0
+    },
+    {
+      "q": "Where should users check current Mapper requirements?",
+      "options": [
+        "Official 4D Labs announcements and Discord",
+        "Random direct messages",
+        "An unrelated token site",
+        "An unverified wallet popup"
+      ],
+      "why": "Verify current participation requirements and reward availability through official project announcements.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-05",
+      "answer": 0
+    },
+    {
+      "q": "How should technical claims be checked?",
+      "options": [
+        "Against the official docs and whitepaper",
+        "Against random unsourced posts",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Against the official docs and whitepaper. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-06",
+      "answer": 0
+    },
+    {
+      "q": "What should a community quiz certificate represent?",
+      "options": [
+        "Completion of independent educational content",
+        "An official project role",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Completion of independent educational content. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-07",
+      "answer": 0
+    },
+    {
+      "q": "What makes builder feedback more useful?",
+      "options": [
+        "Reproducible observations and evidence",
+        "Unverified claims",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Reproducible observations and evidence. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-08",
+      "answer": 0
+    },
+    {
+      "q": "What should learners do when documentation changes?",
+      "options": [
+        "Review and update their understanding",
+        "Treat every old claim as permanently correct",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Review and update their understanding. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-09",
+      "answer": 0
+    },
+    {
+      "q": "What is a safe wallet practice for educational sites?",
+      "options": [
+        "Never enter a seed phrase",
+        "Share recovery phrases to verify learning",
+        "None of the above",
+        "Only social engagement"
+      ],
+      "why": "Never enter a seed phrase. This question is based on the 4D Labs whitepaper concepts; verify wording against current official documentation.",
+      "source": "https://docs.4dlabs.space/",
+      "code": "4D-COMMUNITY-10",
+      "answer": 0
+    }
+  ]
+}

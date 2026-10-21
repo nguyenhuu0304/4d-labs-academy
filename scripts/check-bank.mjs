@@ -1,0 +1,3 @@
+import {readFileSync} from 'node:fs';
+const bank=JSON.parse(readFileSync(new URL('../app/bank.json',import.meta.url)));
+let n=0;const codes=new Set();for(const [module,qs] of Object.entries(bank)){if(qs.length!==10)throw Error(`${module}: expected 10 questions`);for(const q of qs){n++;if(!q.q||!q.why||!q.source||q.options?.length!==4||!Number.isInteger(q.answer)||q.answer<0||q.answer>3)throw Error(`Invalid ${q.code}`);if(codes.has(q.code))throw Error(`Duplicate code ${q.code}`);codes.add(q.code)}}if(n!==60)throw Error(`Expected 60 questions, got ${n}`);console.log(`PASS: ${n} questions across ${Object.keys(bank).length} modules`)

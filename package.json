@@ -1,0 +1,24 @@
+{
+  "name": "4d-labs-academy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check:bank": "node scripts/check-bank.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.12",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "lucide-react": "^0.468.0",
+    "next-auth": "^5.0.0-beta.30"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}
